@@ -1,0 +1,17 @@
+.basicParagraph {
+    margin: 0;
+    line-height: 1.2;
+}
+.smallParagraph {
+    font-size: 14px;
+    
+}
+
+.mediumParagraph {
+    font-size: 16px;
+}
+
+.largeParagraph {
+    font-size: 18px;
+    line-height: 1.3;
+}
