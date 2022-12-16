@@ -1,17 +1,17 @@
-.basicParagraph {
+.basic {
     margin: 0;
     line-height: 1.2;
 }
-.smallParagraph {
+.small {
     font-size: 14px;
     
 }
 
-.mediumParagraph {
+.medium {
     font-size: 16px;
 }
 
-.largeParagraph {
+.large {
     font-size: 18px;
     line-height: 1.3;
 }
