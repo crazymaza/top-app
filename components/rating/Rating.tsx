@@ -17,7 +17,7 @@ export const Rating = ({ isEditable = false, rating, setRating, className, ...pr
             return (
                 <span
                     key={i}
-                    className={cn(styles.star, {
+                    className={cn(styles.star, className, {
                         [styles.filled]: i < currentRating,
                         [styles.editable]: isEditable,
                     })}
