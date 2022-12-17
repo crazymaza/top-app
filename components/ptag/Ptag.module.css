@@ -1,0 +1,17 @@
+.basic {
+    margin: 0;
+    line-height: 1.2;
+}
+.small {
+    font-size: 14px;
+    
+}
+
+.medium {
+    font-size: 16px;
+}
+
+.large {
+    font-size: 18px;
+    line-height: 1.3;
+}
