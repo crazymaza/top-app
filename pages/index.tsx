@@ -23,7 +23,7 @@ function Home({ menu }: HomeProps): JSX.Element {
       <Tag size="m" color="red" href="#">Red Link medium tag</Tag>
       <Rating rating={rating} isEditable setRating={setRating} />
       <ul>
-        {menu.map(item => (<li key={item._id.secondCategory}>{item._id.secondCategory}</li>))}
+        {menu && menu.map(item => (<li key={item._id.secondCategory}>{item._id.secondCategory}</li>))}
       </ul>
     </>
   );
@@ -31,7 +31,7 @@ function Home({ menu }: HomeProps): JSX.Element {
 
 export default withLayout(Home);
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getStaticProps: GetStaticProps<HomeProps> = async () => {
   const firstCategory = 0;
   const { data: menu } = await axios.post<MenuItem[]>(`${process.env.NEXT_PUBLIC_DOMAIN}/api/top-page/find`,
     { firstCategory });
