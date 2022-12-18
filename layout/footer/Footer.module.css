@@ -1,0 +1,39 @@
+.footer {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "allRight users confidencial";
+    padding: 25px 30px;
+    gap: 10px 40px;
+    background-color: var(--primary);
+    color: var(--white);
+    line-height: 1.2;
+}
+
+.footer a:hover {
+    color: var(--gray-light);
+}
+
+.allRight {
+    grid-area: allRight;
+}
+
+.users {
+    grid-area: users;
+}
+
+.confidencial {
+    grid-area: confidencial;
+}
+
+@media screen and (max-width: 765px) {
+    .footer {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "users"
+            "confidencial"
+            "allRight";
+        text-align: center;
+    }
+}
