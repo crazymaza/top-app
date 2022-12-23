@@ -5,7 +5,7 @@ import { withLayout } from "../layout/Layout";
 import axios from 'axios';
 import { MenuItem } from "../interfaces/menu.interface";
 
-function Home({ menu }: HomeProps): JSX.Element {
+function Home(): JSX.Element {
   const [counter, setCounter] = useState<number>(0);
   const [rating, setRating] = useState<number>(4);
   return (
@@ -22,9 +22,6 @@ function Home({ menu }: HomeProps): JSX.Element {
       <Tag size="s" color="primary">Primary small tag</Tag>
       <Tag size="m" color="red" href="#">Red Link medium tag</Tag>
       <Rating rating={rating} isEditable setRating={setRating} />
-      <ul>
-        {menu && menu.map(item => (<li key={item._id.secondCategory}>{item._id.secondCategory}</li>))}
-      </ul>
     </>
   );
 }
