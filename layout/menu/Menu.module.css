@@ -37,7 +37,12 @@
     font-weight: 300;
 }
 
+.secondLevelBlock {
+    display: none;
+}
+
 .secondLevelBlockOpened:last-child {
+    display: block;
     margin-bottom: 20px;
 }
 
