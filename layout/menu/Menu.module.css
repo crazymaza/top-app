@@ -1,39 +1,59 @@
-.footer {
+.menu {}
+
+.firstLevel {
     display: grid;
-    grid-template-columns: 1fr auto auto;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-        "allRight users confidencial";
-    padding: 25px 30px;
-    gap: 10px 40px;
-    background-color: var(--primary);
-    color: var(--white);
+    grid-template-columns: 24px 1fr;
+    gap: 20px;
+    align-items: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    transition: all 0.2s;
+    margin-top: 20px;
+}
+
+.firstLevelActive,
+.firstLevel:hover {
+    color: var(--primary);
+}
+
+.firstLevelActive svg,
+.firstLevel:hover svg {
+    fill: var(--primary)
+}
+
+.secondBlock {
+    margin-top: 15px;
+    margin-left: 12px;
+    padding-left: 32px;
+    border-left: 1px solid #DFDFDF;
+}
+
+.secondLevel {
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: var(--gray-dark);
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 300;
+}
+
+.secondLevelBlockOpened:last-child {
+    margin-bottom: 20px;
+}
+
+.thirdLevel {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: var(--gray-dark);
+    font-weight: 500;
+    font-size: 14px;
     line-height: 1.2;
 }
 
-.footer a:hover {
-    color: var(--gray-light);
-}
-
-.allRight {
-    grid-area: allRight;
-}
-
-.users {
-    grid-area: users;
-}
-
-.confidencial {
-    grid-area: confidencial;
-}
-
-@media screen and (max-width: 765px) {
-    .footer {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "users"
-            "confidencial"
-            "allRight";
-        text-align: center;
-    }
+.thirdLevelActive,
+.thirdLevel:hover {
+    color: var(--primary);
 }
