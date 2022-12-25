@@ -1,0 +1,35 @@
+.title,
+.hhTitle {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: baseline;
+    justify-items: left;
+    gap: 20px;
+}
+
+.hhTitle {
+    grid-template-columns: auto 1fr;
+}
+
+.h1,
+.h2,
+.h3 {
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.seo h1 {
+    font-size: 26px;
+}
+
+.seo h2 {
+    font-size: 22px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.seo h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
