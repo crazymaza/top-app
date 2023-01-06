@@ -1,3 +1,7 @@
+.title {
+    margin-bottom: 20px;
+}
+
 .title,
 .hhTitle {
     display: grid;
@@ -32,4 +36,10 @@
 .seo h3 {
     font-size: 20px;
     font-weight: 700;
+}
+
+@media screen and (max-width: 640px) {
+    .title {
+        grid-template-columns: auto 1fr;
+    }
 }

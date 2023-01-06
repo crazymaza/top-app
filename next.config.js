@@ -2,6 +2,20 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'courses-top.ru',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'http',
+        hostname: 'cdn-bucket.hb.bizmrg.com',
+      }
+    ],
+  },
   webpack: (config) => {
     config.module.rules.push({
       loader: '@svgr/webpack',
