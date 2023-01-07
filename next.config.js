@@ -7,8 +7,6 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'courses-top.ru',
-        port: '',
-        pathname: '/**',
       },
       {
         protocol: 'http',

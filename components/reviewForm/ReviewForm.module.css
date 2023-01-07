@@ -1,0 +1,64 @@
+.reviewForm {
+    font-size: 14px;
+    line-height: 1.5;
+    display: grid;
+    grid-template-columns: [start] repeat(3, auto) [end];
+    gap: 20px 30px;
+    align-items: center
+}
+
+.rating {
+    display: flex;
+    gap: 20px;
+}
+
+.textarea {
+    grid-column: start / end;
+}
+
+.textarea textarea {
+    height: 80px;
+    resize: none;
+}
+
+.panel {
+    padding: 20px;
+    position: relative;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.panelTitle {
+    font-weight: bold;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.success {
+    background: var(--green-light);
+}
+
+.error {
+    background: var(--red-light);
+}
+
+.error .close path {
+    stroke: var(--black);
+}
+
+@media screen and (max-width: 1160px) {
+    .reviewForm {
+        grid-template-columns: [start] repeat(2, auto) [end];
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .reviewForm {
+        grid-template-columns: [start] 1fr [end];
+    }
+}
